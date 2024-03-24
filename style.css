@@ -29,11 +29,11 @@ h1 {
 }
 #NID2{
   color: #154917;
-  font-size: 9.5pt;
+  font-size: 9pt;
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .special-h2{
   margin-top:0;
