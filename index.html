@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chai Eun Hwang | Creative Code Portfolio</title>
+    <title>Chai Eun Hwang | Game Design</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,71 +17,80 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js Embedding</title>
+    <style>
+         html, body {
+            margin: 10;
+            padding-left: 10;
+            width: 100%;
+            height: 100%;
+            position: relative; /* 상대 위치 설정 */
+            overflow: hidden; /* 비율을 유지하면서 자동으로 높이 조정 */
+
+        }
+       /* 스타일 시트를 사용하여 캔버스 크기 조정 */
+        #sketch-container {
+            width: 65%; /* 원하는 크기로 조정 가능 */
+            height: auto;
+            overflow: hidden; /* 비율을 유지하면서 자동으로 높이 조정 */
+
+        }
+        /* iframe 요소 스케일 조정 */
+        iframe {
+            width: 1410px;
+            height: 1000px;
+            transform: scale(0.65); /* 콘텐츠를 축소 */
+            transform-origin: top left; /* 축소 기준 설정 */
+        }
+         #text-container {
+            position: absolute; /* 절대 위치 설정 */
+            top: 110px; /* 위에서부터 거리 설정 */
+            left: 1000px; /* 오른쪽에서부터 거리 설정 */
+            width: 600px;
+            text-align: justify;
+        }
+    </style>
+    <!-- p5.js 라이브러리 가져오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 
   </head>
   <body>
-    
-<!-- navigation menu -->
   <nav>
-    <!-- floating image right -->
-    <div>
-      <a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-zY0QX5il-QCLKFGRZ67IsJU6kl34JjvCq3Ki1qpkSCqAvC_cdL9xKIrZVp_aJ2aIiIOY2X9C5i3iB03yP2k4gKheLvaA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zY0QX5il-QCLKFGRZ67IsJU6kl34JjvCq3Ki1qpkSCqAvC_cdL9xKIrZVp_aJ2aIiIOY2X9C5i3iB03yP2k4gKheLvaA=s1600" id="HBM"/> </a>
-    
-      <h1>Chai Eun Hwang</h1>
-      <p id="NID2">I am an urban design specialist with strong architectural design skills and currently a graduate student in Architecture at Pratt Institute, New York. Having completed my bachelor's and master's degree in Urban Planning & Design at University of Seoul in South Korea, I have been actively involved in special district plan, urban development plan, housing reconstruction plan and privately-owned land development consulting for four years. Being proficient in analyzing spatial data, zoning, master planning, ideation, massing, drawings, renderings and fabrication, I envision myself as an urban designer and an architect making the existing built environment more livable and vibrant.</p>
-    </div>
+
+    <h1>   Chai Eun Hwang    |   Game Design</h1>
+
+    <ul>
+        <p id="NID1"> 👾🐭 Rat Rangers : NYC Subway Cleanup Crew  </p>
+      </ul>
   </nav>
 
-<!-- main content1 -->
-     <div id="rect1"></div>
-     <div id="rect2">
-        <h2>  Creative Coding Studio 2023</h2>
-     </div>
 
-      <ul>
-        <li class="li1">■ <a href="p1.html">Conditional Design</a></li>
-        <li class="li1">■ <a href="p2.html">Lost & Found</a></li>
-        <li class="li1">■ <a href="p3.html">Parametric Design</a></li>
-        <li class="li1">■ <a href="p4.html">Interactive Sound Design</a></li>
-        <li class="li1">■ <a href="p5.html">Experimental Clocks</a></li>
-        <li class="li1">■ <a href="p6.html">Exquisite Corpse</a></li>
-        <li class="li1">■ <a href="p7.html">Optical Illusion</a></li>
+ <div id="sketch-container">
+  <div style="overflow: hidden; margin-top: -30px; margin-left: 0px;">
+        <!-- p5.js 콘텐츠를 포함하는 iframe -->
+        <iframe 
+            src="https://editor.p5js.org/chwang45/full/hMHUvWZD2" 
+            scrolling="no" 
+            frameborder="0"
+>
+        </iframe>
 
+      </div>
 
-      </ul>
-    </nav>
-    
-<!-- main content2 -->
-<!-- <div class="content"> -->
-     <div id="rect1"></div>
-     <div id="rect2">
-        <h2>  Architecture & Urban Design</h2>
-     </div>
+  <div id="text-container">
+   <p id="NID2">
+    I dove into the world of game development with zero experience this semester, and it's been a wild ride! At my coding studio class (@prattgradcomd), I spent the past 3 weeks crafting my very own game. 🕹️ From storyboards to coding, I embraced the challenge and had a blast every step of the way.
 
-      <ul>
-        <li class="li1">■ <a href="p1.html">Haverstraw Brick Museum Renovation</a></li>
-        <li class="li1">■ <a href="p2.html">Immersive Undulation: WTE & Art Production</a></li>
-        <li class="li1">■ <a href="p3.html">Frayed Resiliency: Farragut Public Housing</a></li>
-        <li class="li1">■ <a href="p4.html">Compos Mentis: Red Hook Middle School</a></li>
-        <li class="li1">■ <a href="p5.html">Dong Ba Canal+</a></li>
-        <li class="li1">■ <a href="p6.html">Yangjae Tech+City Master Plan</a></li>
-        <li class="li1">■ <a href="p7.html">Guro Housing Reconstruction Plan</a></li>
-      </ul>
+    Inspired by late-night subway cleaners hustling along tracks, I had a quirky idea - what if NYC rats help their cleaning duties, making it safer for human workers? In my game, these resourceful rats not only clean up the mess but also contribute to recycling and upcycled art. ♻️
 
-<!-- main content3 -->
-     <div id="rect1"></div>
-     <div id="rect3">
-        <h2>  Object Design</h2>
-     </div>
+    The first scene is set at Columbus Circle, where the rats apply for MTA transit cleaner and tackle the challenge of cleaning four tracks. I also wanted to sprinkle in a bit of eco-awareness, so all the littered garbage in the game is recyclable. Stay tuned for the next scene - the rats sorting recyclables! Planning to dive into that during winter break.
 
-      <ul>
-        <li class="li1">■ <a href="p1.html">Integrated Circuit</a></li>
-        <li class="li1">■ <a href="p2.html">Vertical World</a></li>
-        <li class="li1">■ <a href="p3.html">Burst of Color</a></li>
-      </ul>
-
-
-
+    This whole process reminded me of the Maker Movement Manifesto - "Making is fundamental to what it means to be human. We just make, create, and express ourselves to feel whole." Couldn't agree more!</p>
+    </div>
 
   </body>
 </html>
