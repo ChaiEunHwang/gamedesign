@@ -32,6 +32,11 @@
             overflow: hidden;
 
         }
+        @media only screen and (max-width: 767px) {
+            html, body {
+                overflow: auto; /* 폰에서만 스크롤 활성화 */
+            }
+        }
        /* 스타일 시트를 사용하여 캔버스 크기 조정 */
         #sketch-container {
             width: auto; /* 원하는 크기로 조정 가능 */
