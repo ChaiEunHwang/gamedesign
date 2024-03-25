@@ -32,15 +32,15 @@
             overflow: hidden;
 
         }
-        @media only screen and (max-width: 480px) {
-            html, body {
-                overflow: auto; /* 폰에서만 스크롤 활성화 */
+        @media only screen and (max-width: 1500px) {
+            body {
+                overflow-x: scroll; /* 가로 스크롤 활성화 */
+                overflow-y: scroll; /* 세로 스크롤 활성화 */
             }
-        }
         }
        /* 스타일 시트를 사용하여 캔버스 크기 조정 */
         #sketch-container {
-            width: auto; /* 원하는 크기로 조정 가능 */
+            width: 65% /* 원하는 크기로 조정 가능 */
             height: auto;
             overflow: hidden; /* 비율을 유지하면서 자동으로 높이 조정 */
 
@@ -51,7 +51,7 @@
             height: 980px;
             transform: scale(0.65); /* 콘텐츠를 축소 */
             transform-origin: top left; /* 축소 기준 설정 */
-        }
+        }   
          #text-container {
             position: absolute; /* 절대 위치 설정 */
             top: 90px; /* 위에서부터 거리 설정 */
